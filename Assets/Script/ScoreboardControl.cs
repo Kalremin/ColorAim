@@ -39,7 +39,6 @@ public class ScoreboardControl : MonoBehaviour
 
         if (isShiftPressed && Input.GetKeyDown(KeyCode.D))
         {
-            Debug.Log("clear");
             PlayerPrefs.DeleteAll();
             
             for (int i = 0; i < 5; i++)

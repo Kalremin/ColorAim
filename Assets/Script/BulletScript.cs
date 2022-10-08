@@ -42,8 +42,6 @@ public class BulletScript : MonoBehaviour
                 break;
 
             case "Item":
-                Debug.Log(collision.gameObject.name);
-
                 collision.gameObject.GetComponent<HitItem>().Hitted();
                 isNotHit = false;
                 break;
@@ -71,8 +69,6 @@ public class BulletScript : MonoBehaviour
                 break;
 
             case "Item":
-                Debug.Log(other.gameObject.name);
-
                 other.gameObject.GetComponent<HitItem>().Hitted();
                 isNotHit = false;
                 break;

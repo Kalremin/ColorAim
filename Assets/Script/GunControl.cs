@@ -39,7 +39,6 @@ public abstract class GunControl : MonoBehaviour
 
     protected void OnEnable()
     {
-        Debug.Log("onEnable");
         _magazine = _max_Magazine;
         _eGunState = DefineEnum.eGunState.Idle;
         GUIManager._instance.SetText_Magazine(_magazine);

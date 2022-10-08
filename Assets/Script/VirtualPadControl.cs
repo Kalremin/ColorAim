@@ -75,13 +75,11 @@ public class VirtualPadControl : MonoBehaviour, IDragHandler, IPointerUpHandler,
     public void TouchOn()
     {
         isTouching = true;
-        Debug.Log("TouchOn");
     }
 
     public void TouchOff()
     {
         isTouching = false;
-        Debug.Log("TouchOFF");
     }
 
 }

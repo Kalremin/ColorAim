@@ -51,7 +51,7 @@ public class Entity : MonoBehaviour
     void CreateItem()
     {
         float random = Random.Range(0, 100);
-        Debug.Log("random: " + random);
+        
         if (_itemColor != null && random < spawnRateBall)
         {
             
@@ -257,9 +257,6 @@ public class Entity : MonoBehaviour
 
     public bool Hitted(DefineEnum.eColor fireColor)
     {
-        Debug.Log(fireColor);
-        Debug.Log(_colorSkin);
-
         if(fireColor != DefineEnum.eColor.None) // pistol bullet
         {
             if (_kind == eEnemyKind.Xbot && fireColor != _colorSkin)    //xbot

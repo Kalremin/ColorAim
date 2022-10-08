@@ -87,7 +87,6 @@ public class TitleUIManager : MonoBehaviour
     public void BtnClickScoreboardOK()
     {
         isScoreboard = false;
-        Debug.Log(isScoreboard);
     }
 
     public void BtnClickOptionOK()

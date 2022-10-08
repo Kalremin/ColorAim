@@ -35,7 +35,6 @@ public class HitColorItem : HitItem
 
             if(TryGetComponent(out PistolControl temp))
             {
-                Debug.Log("try");
                 temp.ChangeGunColor(_itemColor);
             }
 
