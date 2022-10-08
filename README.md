@@ -8,6 +8,6 @@
 * 대상기기 : PC<br/>
 
 # 영상 링크
-준비중
+https://youtu.be/bzH7bINI0KQ
 
 
