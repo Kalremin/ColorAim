@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InGameManager : MonoBehaviour  // 분기별로 만들것
+public class InGameManager : MonoBehaviour  
 {
     static InGameManager _unique;
     public static InGameManager _instance => _unique;
@@ -23,16 +23,6 @@ public class InGameManager : MonoBehaviour  // 분기별로 만들것
     public Transform PosCam { get { return _camera.transform; } }
     public Material GetColorMaterial(int index) { return ColorMaterials[index]; }
 
-    
-    float flow_timer;
-    float mx;
-    float my;
-    float spawnXposMin = -230;
-    float spawnXposMax = 230;
-    float spawnZposMin = -230;
-    float spawnZposMax = 230;
-    float exceptionSpawnRadius = 15;
-
     bool isPauseWnd; 
     bool isEndWnd;
 
@@ -42,6 +32,15 @@ public class InGameManager : MonoBehaviour  // 분기별로 만들것
     int spawnTime = 5;
     int minSpawnTime = 2;
     int maxCountBot = 20;
+
+    float flow_timer;
+    float mx;
+    float my;
+    float spawnXposMin = -230;
+    float spawnXposMax = 230;
+    float spawnZposMin = -230;
+    float spawnZposMax = 230;
+    float exceptionSpawnRadius = 15;
 
     public int cnt_bot;
 
@@ -81,7 +80,6 @@ public class InGameManager : MonoBehaviour  // 분기별로 만들것
         flow_timer = 0f;
 
         SetHpUnit();
-        //string temp = string.Format("HP: {0} / MaxHP: {1}", PlayerStatus.HP, PlayerStatus.MaxHP);
         ReadyGame();
     }
 
@@ -215,7 +213,6 @@ public class InGameManager : MonoBehaviour  // 분기별로 만들것
         return pos;
     }
 
-    // 더 좋은 방법이 있을 수 있으니 나중에 수정한다.
     int RandomBotIndex()
     {
         int temp = Random.Range(0, 100);

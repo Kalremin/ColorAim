@@ -75,14 +75,6 @@ public class SoundControl : MonoBehaviour
         _playerBGM.Play();
     }
 
-    //public void PlayBGMSound(DefineEnum.eSoundBgm bgm, float volume =1, bool isLooping = true)
-    //{
-    //    _playerBGM.clip = _BGMClips[(int)bgm];
-    //    _playerBGM.volume = volume;
-    //    _playerBGM.loop = isLooping;
-    //    _playerBGM.Play();
-    //}
-
     public void ChangeVolume(float effectVol, float bgmVol)
     {
         _effectSoundVol = effectVol;

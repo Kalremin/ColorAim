@@ -16,17 +16,10 @@ public class PauseWnd : MonoBehaviour
 
     public void ClickUP(Image image) => image.color = Color.white;
 
-    private void Start()
-    {
-        // 게임 화면 일시 정지
-    }
-
     public void OnClickResume()
     {
         if (gameObject.transform.GetComponentsInChildren<OptionManager>().Length > 0) 
             return;
-
-        //InGameManager.Instance().ChangeEnablePauseWnd();// 필수적으로 삭제
         Destroy(gameObject);
     }
 

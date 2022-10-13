@@ -72,11 +72,5 @@ public class DefineEnum
         Rifle
     }
 
-
-    //public enum eSoundBgm
-    //{
-    //    Title,
-    //    InGame
-    //}
 }
 

@@ -29,8 +29,6 @@ public class HitColorItem : HitItem
             flow_time = 0;
             _renderer.enabled = false;
             _collider.enabled = false;
-            //GameObject go = Instantiate(_hitEffect, transform.position, _hitEffect.transform.rotation);
-            //SoundControl._instance.PlayHitEffectSound(DefineEnum.eHitSound.HittedItem, go);
             PlayerControl._instance.ChangePistolColor(_itemColor);
 
             if(TryGetComponent(out PistolControl temp))

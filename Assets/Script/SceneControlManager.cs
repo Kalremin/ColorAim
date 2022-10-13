@@ -40,19 +40,6 @@ public class SceneControlManager : MonoBehaviour
         SoundControl._instance.PlayBGMSound(_sceneState, SoundControl._instance.GetBGMVol());
     }
 
-    //public void ChangeSceneTitle()
-    //{
-    //    _sceneState = ScenesCollection.TitleScene;
-    //    StartCoroutine(LoadingScene(_sceneState.ToString()));
-    //    SoundControl._instance.PlayBGMSound(DefineEnum.eSoundBgm.Title, SoundControl._instance.GetBGMVol());
-    //}
-
-    //public void ChangeSceneInGame()
-    //{
-    //    StartCoroutine(LoadingScene(ScenesCollection.InGameScene.ToString()));
-    //    SoundControl._instance.PlayBGMSound(DefineEnum.eSoundBgm.InGame, SoundControl._instance.GetBGMVol());
-    //}
-
     IEnumerator LoadingScene(string SceneName)
     {
         GameObject go = Instantiate(_loadingWnd, transform);

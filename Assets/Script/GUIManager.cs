@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class GUIManager : MonoBehaviour
 {
     [SerializeField] Text _magazine_txt;
-    //[SerializeField] Text _totalAmmo_txt;
     
     [SerializeField] Slider _healthSlider;
 
@@ -24,7 +23,7 @@ public class GUIManager : MonoBehaviour
 
     int _score = 0;
     int min = 0;
-    int sec = 0;
+    //int sec = 0;
     float flow_timer=0;
     public int Score { get { return _score; } }
     public int Min { get { return min; } }
@@ -50,20 +49,20 @@ public class GUIManager : MonoBehaviour
             return;
 
         flow_timer += Time.deltaTime;
-        SetTime(flow_timer);
+        //SetTime(flow_timer);
         CheckHealth();
     }
 
-    ///////////////////////////////////////////////////// 시간 형식 수정 필요
-    void SetTime(float current)
-    {
-        min = (int)current / 60;
-        sec = (int)current % 60;
+    
+    //void SetTime(float current)
+    //{
+    //    min = (int)current / 60;
+    //    sec = (int)current % 60;
 
-        _minuteTime_txt.text = (min < 10) ? "0" + min.ToString() : min.ToString();
-        _secondTime_txt.text = (sec < 10) ? "0" + sec.ToString() : sec.ToString();
+    //    _minuteTime_txt.text = (min < 10) ? "0" + min.ToString() : min.ToString();
+    //    _secondTime_txt.text = (sec < 10) ? "0" + sec.ToString() : sec.ToString();
 
-    }
+    //}
 
     void CheckHealth() 
     {

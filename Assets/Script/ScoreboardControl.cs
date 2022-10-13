@@ -25,7 +25,6 @@ public class ScoreboardControl : MonoBehaviour
         for (int i = 0; i < 5; i++)
         {
             _nameList[i].text = PlayerPrefs.GetString(RankingData.GetNameData[i], "[Empty]");
-            //PlayerPrefs.SetString(RankingData.GetScoreData[i], "500");
             _scoreList[i].text = PlayerPrefs.GetString(RankingData.GetScoreData[i], "0");
         }
     }

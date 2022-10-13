@@ -64,7 +64,7 @@ public abstract class GunControl : MonoBehaviour
     public void FireCompleteAnimation()
     {
         _animator.SetTrigger("Idle");
-        _eGunState = DefineEnum.eGunState.Idle;//!reloading //fire = false;
+        _eGunState = DefineEnum.eGunState.Idle;
         new WaitForSeconds(0.3f);
     }
 

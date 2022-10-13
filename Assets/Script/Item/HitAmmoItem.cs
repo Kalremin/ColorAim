@@ -27,8 +27,6 @@ public class HitAmmoItem : HitItem
     {
         flow_time += Time.deltaTime;
 
-        //if (isHitted) GunControl._instance.ResetMagazine();
-
         if (flow_time >= 10)
         {
             ItemAct();
@@ -76,7 +74,6 @@ public class HitAmmoItem : HitItem
         _boxCollider.size = new Vector3(10, 0, 10);
         _boxCollider.isTrigger = true;
         isAct = true;
-        //_collider.transform.localScale = new Vector3(10, 0, 10);
 
     }
 

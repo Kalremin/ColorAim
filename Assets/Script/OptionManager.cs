@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class OptionManager : MonoBehaviour
 {
-    //static OptionManager _unique;
-    //public static OptionManager _instance { get { return _unique; } }
 
     public Slider _effectSoundSlider;
     public Slider _BGMSoundSlider;
@@ -37,8 +35,6 @@ public class OptionManager : MonoBehaviour
     public void BtnClickOptionOK()
     {
         SoundControl._instance.ChangeVolume(_effectSoundSlider.value, _BGMSoundSlider.value);
-
-        //TitleUIManager._instance.BtnClickOptionOK();
         Destroy(gameObject);
     }
 

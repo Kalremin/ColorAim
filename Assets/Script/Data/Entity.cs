@@ -26,10 +26,7 @@ public class Entity : MonoBehaviour
     protected Transform _posCam;
     protected Vector3 _vecTargetPos;
 
-    //public SkinnedMeshRenderer joint_meshRenderer;
-    //public MeshCollider joint_collider; //Mesh Init
     public SkinnedMeshRenderer surface_meshRenderer;
-    //public MeshCollider surface_collider; //Mesh Init
 
     protected int ani_death_cnt;
     protected int ani_attack_cnt;
@@ -150,8 +147,6 @@ public class Entity : MonoBehaviour
                 }
                 break;        
         }
-
-        //transform.rotation = Quaternion.LookRotation((_vecTargetPos - transform.position).normalized);
 
     }
 
