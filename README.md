@@ -7,7 +7,7 @@
 * 사용언어 : C#<br/>
 * 대상기기 : PC<br/>
 
-# 영상 링크
-준비중
+# 영상 및 설명문서
+영상: https://youtu.be/bzH7bINI0KQ
 
-
+설명문서: https://docs.google.com/document/d/1gDOvcUhOuCO2BwbKcgDSdsBb9AA-izNx/edit?usp=sharing&ouid=103071182934731723349&rtpof=true&sd=true
